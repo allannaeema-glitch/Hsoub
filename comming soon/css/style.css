@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: ar-font;
+    src: url(../font/Cairo-SemiBold.ttf);
+}
+
+body{
+    font-family: ar-font;
+    direction: rtl;
+}
+
+header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+header .brand{
+    margin: 100px auto 60px;
+    display: inline-block;
+    padding-bottom: 35px;
+    border-bottom: 5px solid #464b52 
+}
+
+header .heading-page h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 75px;
+    color: #fff;
+}
+
+
+header .heading-page p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #acacac;
+    width: 40%;
+    margin: auto;
+}
+/* header .count-down {
+    width: 60%;
+    margin: 90px;
+}
+
+header .counter {
+    display: inline-block;
+    margin: 0 15px
+}
+
+header .count-amount {
+    font-size: 60px;
+    display: block;
+    font-weight: bold;
+    color: #ffce00;
+}
+
+header .count-period {
+    font-size: 30px;
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+header .send-notification p {
+    font-size: 18px;
+   color: #fff;
+   transform: translateY(120%);
+}
+
+header .input-group {
+    width: 30%;
+    margin: auto;
+    transform: translateY(30%);
+}
+
+header .send-notification button {
+    background-color: #ffce00;
+    padding: 13px 33px;
+    border-radius: 0;
+}
+
+header .send-notification .input-group input {
+    
+    border-radius: 0;
+    border: 2px solid #e6e6e6;
+    color: #e6e6e6;
+    font-size: 18px;
+    text-align: right;
+}
+
+invalid-feedback{
+    margin-bottom: -30px;
+} */
+
+/* توسيط العد التنازلي */
+.count-down {
+    margin: 40px 0;
+}
+
+.countdown-wrapper {
+    gap: 15px;
+}
+
+/* تصميم صناديق العداد */
+.counter {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    min-width: 90px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.count-amount {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.count-period {
+    font-size: 14px;
+    color: #555;
+}
+
+/* توسيط نموذج البريد الإلكتروني */
+
+.send-notification {
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.notification-input {
+    max-width: 400px;
+    margin: 0 auto;
+   
+}
+
+.notification-input .form-control {
+    text-align: right;
+}
+.notification-input img {
+    width: 20px;
+}
+
+/* تحسين العرض على الشاشات الصغيرة */
+@media (max-width: 576px) {
+    .counter {
+        min-width: 70px;
+        padding: 10px;
+    }
+
+    .count-amount {
+        font-size: 20px;
+    }
+}
+
+section.features {
+    padding: 100px 0;
+}
+
+section.features h2 {
+    font-size: 45px;
+    color: #555;
+    margin-bottom: 50px;
+
+}
+section.features .row .d-flex {
+    border: 4px solid #fafafa;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+    max-height: 190px;
+}
+
+section.features .row .d-flex h4 {
+    font-size: 24px;
+    color: #555;
+}
+section.features .row .d-flex p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #a1a1a1;
+}
+section.features .row .col-md-6:nth-child(even) {
+    direction: ltr;
+}
+
+/* 
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+ footer .footer-notification {
+    background-color: rgba(255, 206, 0, 0.7);
+    padding: 70px 0;
+
+ }
+ footer .footer-notification h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+ }
+ footer .input-group {
+    width: 30%;
+    margin: auto;
+ }
+ footer .input-group input {
+    border-radius: 0;
+    font-size: 18px;
+    color: #c7c7c7;
+    border-color: #fff;
+    text-align: right;
+ }
+ footer .input-group button {
+    background-color: #393939;
+    padding: 13px 33px;
+    border-radius: 0;
+    color: #ffce00;
+    font-weight: bold;
+ }
+    footer .social-media {
+        background-color: rgba(57, 57, 57, 0.9);
+        padding: 100px 0 30px;
+    }
+    footer .social-media h3 {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    footer .social-media .list-inline {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 24px;
+        background-color: rgba(255, 255, 255, 0.14);
+        color: #fff;
+        display: block;
+    }
+    
+
+/* Footer */
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* قسم التنبيه أو النشرة البريدية */
+footer .footer-notification {
+    background-color: rgba(255, 206, 0, 0.85);
+    padding: 70px 20px;
+}
+
+footer .footer-notification h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+footer .footer-notification .input-group {
+    max-width: 450px;
+    margin: auto;
+}
+
+footer .footer-notification input {
+    border-radius: 0;
+    font-size: 18px;
+    color: #333;
+    border: 1px solid #fff;
+    text-align: right;
+    padding: 10px 15px;
+}
+
+footer .footer-notification button {
+    background-color: #393939;
+    padding: 13px 33px;
+    border-radius: 0;
+    color: #ffce00;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .footer-notification button:hover {
+    background-color: #555;
+}
+
+/* قسم وسائل التواصل الاجتماعي */
+footer .social-media {
+    background-color: rgba(57, 57, 57, 0.9);
+    padding: 60px 20px 30px;
+}
+
+footer .social-media h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+footer .social-media ul.list-inline {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-media ul.list-inline li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+footer .social-media ul.list-inline li a:hover {
+    background-color: #ffce00;
+    color: #000;
+    transform: scale(1.1);
+}
